@@ -1,0 +1,22 @@
+{
+  "name": "projectmanagementapp",
+  "version": "1.0.0",
+  "description": "a project management app like basecamp",
+  "keywords": [
+    "backend",
+    "course",
+    "backend",
+    "API",
+    "creation"
+  ],
+  "license": "ISC",
+  "author": "Arshdeep Singh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
