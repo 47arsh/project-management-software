@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 const app = express();
-
+app.use(cookieParser());
 //cors configuration
 app.use(cors({
     origin : process.env.CORS_ORIGIN?.split(",") || "http://localhost:5173",
