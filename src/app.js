@@ -17,9 +17,12 @@ app.use(express.static("public"))
 
 // import the routes
 
-import Router from "./routes/healthcheck.routes.js"
+import healthCheckRouter from "./routes/healthcheck.routes.js"
+import authRouter from "./routes/auth.routes.js";
 
-app.use("/ap1/v1/healthcheck", Router);
+
+app.use("/api/v1/healthcheck", healthCheckRouter);
+app.use("/api/v1/auth", authRouter);
 
 app.get("/" , (req,res) =>{
     res.send("Welcome to Project Camp");
